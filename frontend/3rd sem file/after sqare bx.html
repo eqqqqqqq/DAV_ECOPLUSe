@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media(max-width: 600px) {
+            body {
+                background-color: rgb(189, 35, 35);
+           color: aliceblue;
+            }
+        }
+         .container { 
+           display: flex;
+           flex-wrap:  wrap-reverse;
+              grid-template-columns: auto auto auto;
+              border: 3px solid rgb(176, 156, 156);
+              flex-direction: column-reverse;
+              flex-flow: row wrap;
+              padding: 10px;
+              margin: 10px;
+         }
+         .item {
+            background-color: rgb(218, 28, 28);
+            color: rgb(185, 197, 207);
+            border: 2px solid black;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            
+         }
+    </style>
+</head>  c
+<body>
+    <div class="container">
+        <div class="item"> item4</div>
+        <div class="item"> item1</div>
+        <div class="item"> item2</div>
+ 
+</body>
+</html>
+</html>

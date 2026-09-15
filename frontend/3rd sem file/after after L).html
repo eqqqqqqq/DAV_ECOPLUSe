@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+   <style>
+      .abc {
+           height: 200px;
+           width: 200px;
+           border-radius: 100%;
+           background:linear-gradient(to right, rgb(221, 29, 29), rgb(223, 16, 30), rgb(218, 13, 163));
+           transition: 1ms ease-in-out;
+           /* animation-name: swipe;
+           animation-duration: 2s;
+           animation-iteration-count: infinite;
+           animation-direction: alternate;
+           background-size: 200% 100%;
+           animation-timing-function: linear; */
+       }
+       .abc:hover {
+           background-color: rgb(218, 13, 163);
+           transform: translateX(100px); 
+       }
+
+       /* @keyframes swipe {
+           from{
+               transform: translateY(0px)rotate(0deg);
+               
+           }
+           to{
+                transform: translateY(100px)rotate(0deg); 
+             
+           } */
+       }
+   </style>
+   <style>
+      .abcd {
+           height: 200px;
+           width: 200px;
+           background:linear-gradient(to right, rgb(110, 10, 203), rgb(190, 184, 190), rgb(218, 13, 163));
+           animation-name: swipe;
+           animation-duration: 2s;
+           animation-iteration-count: infinite;
+           animation-direction: alternate;
+           background-size: 200% 100%;
+           animation-timing-function: linear;
+           animation-delay: 5s;
+       }
+       @keyframes swipe {
+           from{
+               transform: translateY(0px)rotate(0deg);
+               background-position: 0% 0%;
+           }
+           to{
+                transform: translateY(100px)rotate(360deg); 
+               background-position: 100% 0%;
+           }
+       }
+   </style>
+</head>
+<body>
+    <div class="abcd"></div>
+    <div class="abc"></div>
+</body>
+</html>
